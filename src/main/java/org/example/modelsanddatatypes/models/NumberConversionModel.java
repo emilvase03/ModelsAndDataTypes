@@ -1,11 +1,11 @@
 package org.example.modelsanddatatypes.models;
 
 public class NumberConversionModel {
-    public double getMilesFromKilometers(double km) {
-        return km * 0.621371;
+    public float getMilesFromKilometers(float km) {
+        return km * 0.621371f;
     }
-    public double getKilometersFromMiles(double miles) {
-        return miles * 1.60934;
+    public float getKilometersFromMiles(float miles) {
+        return miles * 1.60934f;
     }
 
     public String getGreetingsMessage(String name) {

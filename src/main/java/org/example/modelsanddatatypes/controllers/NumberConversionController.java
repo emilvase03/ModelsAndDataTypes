@@ -31,8 +31,8 @@ public class NumberConversionController implements Initializable {
     private void kmToMilesOnClick(ActionEvent event)
     {
         String input = txtKmInput.getText().replace(",", ".");
-        double txtFieldValue = Double.parseDouble(input);
-        double result = model.getMilesFromKilometers(txtFieldValue);
+        float txtFieldValue = Float.parseFloat(input);
+        float result = model.getMilesFromKilometers(txtFieldValue);
         String resultAsString = String.format("%.2f", result);
         lblKmToMilesResult.setText(resultAsString + " miles");
     }
@@ -41,8 +41,8 @@ public class NumberConversionController implements Initializable {
     private void milesToKmOnClick(ActionEvent event)
     {
         String input = txtMilesInput.getText().replace(",", ".");
-        double txtFieldValue = Double.parseDouble(input);
-        double result = model.getKilometersFromMiles(txtFieldValue);
+        float txtFieldValue = Float.parseFloat(input);
+        float result = model.getKilometersFromMiles(txtFieldValue);
         String resultAsString = String.format("%.2f", result);
         lblMilesToKmResult.setText(resultAsString + " km");
     }
