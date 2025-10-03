@@ -33,8 +33,8 @@ public class NumberConversionController implements Initializable {
         String input = txtKmInput.getText().replace(",", ".");
         float txtFieldValue = Float.parseFloat(input);
         float result = model.getMilesFromKilometers(txtFieldValue);
-        String resultAsString = String.format("%.2f", result);
-        lblKmToMilesResult.setText(resultAsString + " miles");
+        String formattedResult = String.format("%.2f", result);
+        lblKmToMilesResult.setText(formattedResult + " miles");
     }
 
     @FXML
@@ -43,8 +43,8 @@ public class NumberConversionController implements Initializable {
         String input = txtMilesInput.getText().replace(",", ".");
         float txtFieldValue = Float.parseFloat(input);
         float result = model.getKilometersFromMiles(txtFieldValue);
-        String resultAsString = String.format("%.2f", result);
-        lblMilesToKmResult.setText(resultAsString + " km");
+        String formattedResult = String.format("%.2f", result);
+        lblMilesToKmResult.setText(formattedResult + " km");
     }
 
     @Override
